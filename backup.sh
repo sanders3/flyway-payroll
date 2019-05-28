@@ -1,1 +1,2 @@
-mysqldump -u dev payroll -p > dev.backup.sql
+LOCATION="$(dirname "${0}")/backup/dev.backup.sql"
+mysqldump -u dev payroll -p > "${LOCATION}"
